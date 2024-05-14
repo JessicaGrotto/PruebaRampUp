@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--Ejercicio 1
+    Diseña un algoritmo que cuente las veces que aparece una determinada letra en una frase
+    <textarea id="frase" placeholder="Frase"></textarea>
+    <input id="letra" type="text" placeholder="elija una letra">
+    <button class="comecar" type="submit" onclick="contar()">Contar</button>-->
+
+
+    <!--Ejercicio 2 
+    Diseña un algoritmo que imprima los números impares entre un número 
+    dado por el usuario y los siguientes 50 números
+    <input class="number" type="number" placeholder="Elija un numero">;
+    <button class="cont" type="submit" onclick="contador()">Contar</button>;-->
+
+    <script>
+    //Ejercicio 1
+        const frase = "teste da frase"
+        const letra = "a"
+        function contarLetras() {
+            let cuantas=0;
+            for (let i = 0; i < frase.length; i++) {
+                if (letra == frase[i]) {
+                    cuantas++
+                }
+            }
+            return cuantas
+        };
+        console.log(contarLetras())
+        contarLetras()
+
+    //Ejercicio 2
+        function contadorImpares() {
+            const numInicial = 1;
+            let numTotal = numInicial + 50;
+
+            for (let numImpar=0; numImpar<numTotal; numImpar++){
+               if (numImpar %2 !== 0){
+                console.log(numImpar)
+            }}};
+        contadorImpares()
+    </script>
+</body>
+
+</html>
